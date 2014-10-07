@@ -22,5 +22,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider :virtualbox do |vb|
    vb.gui = true
    vb.customize ["modifyvm", :id, "--memory", "2048"]
+   vb.customize ["modifyvm", :id, "--vram", "128"]
+   vb.customize ["modifyvm", :id, "--accelerate3d", "on"]
   end
 end
