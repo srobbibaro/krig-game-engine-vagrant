@@ -12,5 +12,6 @@ apt-get install -y libvorbis-dev
 apt-get install -y libglu1-mesa-dev
 apt-get install -y freeglut3
 apt-get install -y freeglut3-dev
+apt-get install -y libpng-dev
 apt-get install -y g++
 apt-get install -y git
