@@ -16,6 +16,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Provisioning
   config.vm.provision :shell, path: "bootstrap.sh"
 
+  config.vm.synced_folder "krig-game-engine/", "/home/vagrant/krig-game-engine/"
+
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
   # VirtualBox:
